@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+	h1{
+    color: #32c5ca;
+    text-align: center;
+}
+body{
+    background-image:url(login1.jpg);
+	background-size:75%;
+}
+.tables{
+    margin: auto;
+    width: 40%;
+    border-radius: 10px;
+}
+</style>
+<script src="validation_login.js"></script>
+</head>
+<body>
+        <h1>Bienvenue</h1>
+		<form id="loginForm" action="login.php" method="POST" >
+        <table class="tables" align="left">
+            <tr>
+                <td colspan="2" align="center"><img src="login_ic.png" alt="login_icon" height="50" width="50"></td>
+            </tr>
+            <tr>
+                <td align="center">email</td>
+                <td align="center"><input type="email" placeholder="Add the email" id="email" name="email">
+				</td>
+		
+            </tr><tr><td id="msg_em" colspan='2' style='color:red ;text-align: center;'></td></tr>
+            <tr>
+                <td align="center">Password</td>
+                <td align="center"><input type="password" id="password" name="password" size="20" placeholder="Add the password">
+				</td>
+            </tr><tr><td id="msg_pss" colspan='2' style='color:red ;text-align: center;'></td></tr>
+            <tr>
+                <td></td>
+                <td align="center"><input type="submit" value="Send" onclick="return Validation_log()">
+				<input type="reset" value="Delete"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center"><a href="inscription.html">sign up</a></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

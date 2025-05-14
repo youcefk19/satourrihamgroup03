@@ -1,0 +1,40 @@
+body {
+    background-image: url("img/loginjpg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    }
+h2{
+    color: #32c5ca;
+    font-family: Arial;
+    font-style: italic;
+} 
+.highlight{
+    background-color:;
+}
+td img{
+    height: 150px;
+    width: 150px;
+    transition: 0.3s;
+}
+.imgsz:hover img{
+    transform: scale(1.2);
+}
+.titles{
+    font-size: medium;
+    font-family: Arial;
+    color: Black;
+}
+.prix{
+    font-size: small;
+    font-family: 'Franklin Gothic Medium';
+    color: black;
+}
+.prix{
+    transition: 0.3s;
+}
+.prix:active, .prix:focus{
+    transform: scale(1.3);
+}
+.maintable{
+    border-radius: 10px;
+}
